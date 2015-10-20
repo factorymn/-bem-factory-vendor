@@ -1,0 +1,17 @@
+/**
+ * 'favicons' default block
+ * Use this fallback to prevent <head> disruption, when favicons aren't generated.
+ */
+
+block('favicons').def()(function() {
+    applyCtx([
+        {
+            block : 'page',
+            elem : 'link',
+            attrs : {
+                rel : 'shortcut icon',
+                href : '/favicons/default/favicon.ico'
+            }
+        }
+    ]);
+});

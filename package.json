@@ -1,0 +1,23 @@
+{
+  "author": "",
+  "name": "bem-factory-private",
+  "version": "0.0.1",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "hhttps://bitbucket.org/manufactura/bem-factory-private"
+  },
+  "keywords": [
+    "bem"
+  ],
+  "engines": {
+    "node": ">=0.10"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+  },
+  "scripts": {
+  },
+  "private": true
+}

@@ -1,0 +1,12 @@
+{
+  "name": "bem-factory-private",
+  "version": "0.0.1",
+  "description": "",
+  "bugs": "",
+  "ignore": [
+    ".bem/cache",
+    "node_modules",
+    "libs"
+  ],
+  "dependencies": {}
+}
