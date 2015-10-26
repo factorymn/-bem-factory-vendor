@@ -1,27 +1,26 @@
 block('slider')(
-    js()(true)(
-        content(function() {
-            return [
-                {
-                    elem : 'list',
-                    content : this.ctx.slides
-                },
-                {
-                    elem : 'controls',
-                    content : [
-                        {
-                            elem : 'control',
-                            elemMods : { type : 'prev' },
-                            content : this.ctx.controlPrev
-                        },
-                        {
-                            elem : 'control',
-                            elemMods : { type : 'next' },
-                            content : this.ctx.controlNext
-                        }
-                    ]
-                }
-            ]
-        })
-    )
+    js()(true),
+    content(function() {
+        return [
+            {
+                elem : 'list',
+                content : this.ctx.slides
+            },
+            {
+                elem : 'controls',
+                content : [
+                    {
+                        elem : 'control',
+                        elemMods : { type : 'prev' },
+                        content : this.ctx.controlPrev
+                    },
+                    {
+                        elem : 'control',
+                        elemMods : { type : 'next' },
+                        content : this.ctx.controlNext
+                    }
+                ]
+            }
+        ]
+    })
 );
