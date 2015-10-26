@@ -14,7 +14,9 @@ See:
     mods : { engine : 'slick' },
     js : {
         infinite : false,
-        slidesToShow : 2
+        slidesToShow : 2,
+        prevArrow : '.button_theme_arrow.button_arrow_right',
+        nextArrow : '.button_theme_arrow.button_arrow_left'
     },
     slides : [
         {
@@ -26,14 +28,16 @@ See:
             url : 'i/test.png'
         }
     ],
-    controls : [
-        {
-            block : 'button',
-            mods : { theme : 'arrow', arrow : 'left' }
-        },
+    controlPrev : [
         {
             block : 'button',
             mods : { theme : 'arrow', arrow : 'right' }
+        }
+    ],
+    controlNext : [
+        {
+            block : 'button',
+            mods : { theme : 'arrow', arrow : 'left' }
         }
     ]
 }

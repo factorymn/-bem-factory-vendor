@@ -4,7 +4,12 @@ block('slider')(
         return [
             {
                 elem : 'list',
-                content : this.ctx.slides
+                content : this.ctx.slides.map(function(slide) {
+                    return {
+                        elem : 'item',
+                        content : slide
+                    };
+                })
             },
             {
                 elem : 'controls',
