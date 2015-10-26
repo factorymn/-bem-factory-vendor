@@ -16,7 +16,7 @@ See:
         infinite : false,
         slidesToShow : 2
     },
-    content : [
+    slides : [
         {
             block : 'image',
             url : 'i/test.png'
@@ -24,6 +24,16 @@ See:
         {
             block : 'image',
             url : 'i/test.png'
+        }
+    ],
+    controls : [
+        {
+            block : 'button',
+            mods : { theme : 'arrow', arrow : 'left' }
+        },
+        {
+            block : 'button',
+            mods : { theme : 'arrow', arrow : 'right' }
         }
     ]
 }

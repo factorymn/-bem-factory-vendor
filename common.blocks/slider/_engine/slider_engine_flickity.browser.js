@@ -24,7 +24,7 @@ provide(BEMDOM.decl({ block : this.name, modName : 'engine', modVal : 'flickity'
             }
         }
 
-        return new Flickity(this.domElem[0], defaultParams);
+        return new Flickity(this.elem('list'), defaultParams);
     }
 }));
 

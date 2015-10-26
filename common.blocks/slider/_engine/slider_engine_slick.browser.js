@@ -22,7 +22,7 @@ provide(BEMDOM.decl({ block : this.name, modName : 'engine', modVal : 'slick' },
                 defaultParams[prop] = params[prop];
             }
         }
-        this.domElem.slick(defaultParams);
+        this.elem('list').slick(defaultParams);
     }
 }));
 
