@@ -14,16 +14,18 @@ block('slider')(
             {
                 elem : 'controls',
                 content : [
-                    {
-                        elem : 'control',
-                        elemMods : { type : 'prev' },
-                        content : this.ctx.controlPrev
-                    },
-                    {
-                        elem : 'control',
-                        elemMods : { type : 'next' },
-                        content : this.ctx.controlNext
-                    }
+                    this.ctx.controls ? this.ctx.controls : [
+                        {
+                            elem : 'control',
+                            elemMods : { type : 'prev' },
+                            content : this.ctx.controlPrev
+                        },
+                        {
+                            elem : 'control',
+                            elemMods : { type : 'next' },
+                            content : this.ctx.controlNext
+                        }
+                    ]
                 ]
             }
         ]

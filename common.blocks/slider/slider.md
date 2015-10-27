@@ -42,3 +42,43 @@ See:
     ]
 }
 ```
+
+Use `controls` to define custom controls layout:
+
+```javascript
+{
+    block : 'slider',
+    mods : { engine : 'slick' },
+    js : {
+        infinite : false,
+        slidesToShow : 2,
+        prevArrow : '.button_theme_arrow.button_arrow_right',
+        nextArrow : '.button_theme_arrow.button_arrow_left'
+    },
+    slides : [
+        {
+            block : 'image',
+            url : 'i/test.png'
+        },
+        {
+            block : 'image',
+            url : 'i/test.png'
+        }
+    ],
+    controls : [
+        {
+            block : 'more', // for example
+            content : [
+                {
+                    block : 'button',
+                    mods : { theme : 'arrow', arrow : 'right' }
+                },
+                {
+                    block : 'button',
+                    mods : { theme : 'arrow', arrow : 'left' }
+                }
+            ]
+        }
+    ]
+}
+```
