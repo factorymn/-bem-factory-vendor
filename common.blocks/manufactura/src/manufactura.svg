@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="170" height="36" viewBox="0 0 170 36">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #000;
+        fill-rule: evenodd;
+      }
+
+      .cls-2, .cls-3 {
+        font-size: 20.1251px;
+      }
+
+      .cls-3, .cls-5, .cls-7 {
+        text-transform: uppercase;
+      }
+
+      .cls-3 {
+        font-family: "GothamPro-Black";
+      }
+
+      .cls-4, .cls-5 {
+        font-size: 11px;
+      }
+
+      .cls-5, .cls-7 {
+        font-family: "GothamPro-Medium";
+      }
+
+      .cls-6, .cls-7 {
+        font-size: 13px;
+      }
+    </style>
+
+  </defs>
+  <g>
+    <path d="M0.014,35.995 L0.014,-0.014 L35.995,-0.014 L35.995,35.995 L0.014,35.995 ZM7.286,27.915 L27.659,27.915 L27.659,24.938 L7.286,24.938 L7.286,27.915 ZM26.815,9.770 L26.774,8.001 C26.513,8.004 21.658,8.009 21.422,8.001 L17.588,17.284 C17.588,17.284 13.954,8.443 13.853,8.001 C13.571,8.004 8.607,8.003 8.322,8.001 L8.200,9.713 L10.155,10.283 L9.352,20.560 L7.292,21.083 L7.331,22.932 L13.896,22.932 L13.936,21.041 L11.843,20.607 L12.174,13.148 L16.074,22.029 L18.114,22.029 L21.918,13.006 L22.285,20.589 L20.494,21.142 L20.533,22.932 L27.636,22.932 L27.679,21.041 L25.603,20.579 L24.837,10.283 L26.815,9.770 Z" class="cls-1"/>
+    <text transform="translate(48 23) scale(0.7)" class="cls-2"><tspan class="cls-3">Manufactura</tspan></text>
+    <text transform="translate(49 7) scale(0.7)" class="cls-4"><tspan class="cls-5">Programmed in</tspan></text>
+    <text transform="translate(49 36) scale(0.7)" class="cls-6"><tspan class="cls-7">2015</tspan></text>
+  </g>
+</svg>
