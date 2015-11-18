@@ -73,7 +73,7 @@ modules.define(
         },
         _createThumbnail : function() {
             // TODO: support WebP
-            var thumbStyles = 'background-image: url("' + 'https://i.ytimg.com/vi/' + this._videoId + '/maxresdefault.jpg")';
+            var thumbStyles = 'background-image: url("' + 'https://i.ytimg.com/vi/' + this._videoId + '/0.jpg")';
             var _this = this;
 
             BEMDOM.append(
