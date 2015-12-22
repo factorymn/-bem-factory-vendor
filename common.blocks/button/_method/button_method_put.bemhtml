@@ -1,0 +1,40 @@
+block('button').mod('method', 'put')(
+    def()(function() {
+        /**
+         *  Мода блока params принимает массив параметров с полями name и val
+         * @this.ctx.params  {Array} массив объектов
+         * @return           {Array} BEMJSON массив со скрытыми инпутами
+         *  TODO: Научить блок в качестве пораметра принемать объект
+         */
+        var ctx = this.ctx;
+        var params = ctx.params || [];
+        ctx.mods = this.extend(this.ctx.mods, { type : 'submit' });
+
+        applyCtx({
+            tag : 'form',
+            attrs : {
+                method : 'post',
+                action : this.ctx.action,
+                enctype : this.ctx.enctype,
+                style : 'display: inline-block;'
+            },
+            content : [
+                {
+                    tag : 'input',
+                    attrs : { type : 'hidden', name : '_method', value : 'put' }
+                },
+                (!!this.ctx.token) && {
+                    tag : 'input',
+                    attrs : { type : 'hidden', name : 'authenticity_token', value : this.ctx.token }
+                },
+                params.map(function(param) {
+                    return {
+                        tag : 'input',
+                        attrs : { type : 'hidden', name : param.name, value : param.val }
+                    };
+                }),
+                ctx
+            ]
+        });
+    })
+);
