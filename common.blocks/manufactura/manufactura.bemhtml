@@ -1,14 +1,11 @@
 block('manufactura')(
     tag()('a'),
     attrs()(function() {
-        var styles = 'display: inline-block; position: relative; width: 270px; height: 94px;' +
-            this.ctx.attrs && this.ctx.attrs.style ? this.ctx.attrs.style : '';
-
         return this.extend(applyNext(), {
             href : this.ctx.url || 'http://factory.mn/',
             title : 'Мануфактура | Factory.mn',
             alt : 'Мануфактура | Factory.mn',
-            style : styles,
+            style : 'display: inline-block; position: relative; width: 270px; height: 94px; ' + this.ctx.styles,
             target : '_blank'
         });
     }),
