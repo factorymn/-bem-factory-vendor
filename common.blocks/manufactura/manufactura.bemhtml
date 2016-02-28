@@ -5,7 +5,8 @@ block('manufactura')(
             href : this.ctx.url || 'http://factory.mn/',
             title : 'Мануфактура | Factory.mn',
             alt : 'Мануфактура | Factory.mn',
-            style : 'display: inline-block; position: relative; width: 270px; height: 94px; ' + this.ctx.styles,
+            style : 'display: inline-block; position: relative; width: 270px; height: 94px;' +
+                    (this.ctx.styles ? ' ' + this.ctx.styles : ''),
             target : '_blank'
         });
     }),
