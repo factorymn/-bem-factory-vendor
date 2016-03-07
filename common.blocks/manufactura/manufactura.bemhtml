@@ -90,7 +90,7 @@ block('manufactura')(
                     {
                         tag : 'g',
                         attrs : {
-                            style : 'letter-spacing: 0.048em; text-transform: uppercase;'
+                            style : 'letter-spacing: 0.02em; text-transform: uppercase;'
                         },
                         content : [
                             {
