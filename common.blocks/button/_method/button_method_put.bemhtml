@@ -1,5 +1,5 @@
 block('button').mod('method', 'put')(
-    wrap()(function() {
+    def()(function() {
         /**
          *  Мода блока params принимает массив параметров с полями name и val
          * @this.ctx.params  {Array} массив объектов
@@ -10,7 +10,7 @@ block('button').mod('method', 'put')(
         var params = ctx.params || [];
         ctx.mods = this.extend(this.ctx.mods, { type : 'submit' });
 
-        return {
+        return applyCtx({
             tag : 'form',
             attrs : {
                 method : 'post',
@@ -35,6 +35,6 @@ block('button').mod('method', 'put')(
                 }),
                 ctx
             ]
-        };
+        });
     })
 );

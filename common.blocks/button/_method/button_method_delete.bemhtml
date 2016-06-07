@@ -1,9 +1,9 @@
 block('button').mod('method', 'delete')(
-    wrap()(function() {
+    def()(function() {
         var ctx = this.ctx;
         ctx.mods = this.extend(this.ctx.mods, { type : 'submit' });
 
-        return {
+        return applyCtx({
             tag : 'form',
             attrs : {
                 method : 'post',
@@ -22,6 +22,6 @@ block('button').mod('method', 'delete')(
                 },
                 ctx
             ]
-        };
+        });
     })
 );
